@@ -1,0 +1,8 @@
+.hero-items-card-container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}

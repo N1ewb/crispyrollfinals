@@ -1,0 +1,16 @@
+.airing-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: auto;
+}
+.airing-cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap:20px;
+    scroll-behavior: smooth;
+    
+}
+

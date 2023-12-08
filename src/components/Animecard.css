@@ -1,0 +1,15 @@
+.anime-card {
+    height: 600px;
+    width:300px;
+  }
+  .Poster {
+    height: 600px;
+    width:300px;
+  }
+  .anime-card img{
+    height: 400px;
+    width: 300px;
+  }
+  .anime-card h5{
+    color: white;
+  }
