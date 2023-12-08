@@ -39,6 +39,7 @@ function AiringList() {
             const data = await response.data;
             const sortedAiring = data.data.sort((a, b) => a.status.localeCompare(b.status));
             setAiring(sortedAiring);
+            console.log(sortedAiring)
         } catch (error) {
             console.error('Error fetching data:', error);
         } finally {

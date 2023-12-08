@@ -6,3 +6,6 @@
     align-items: center;
     justify-content: center;
 }
+.hero-container h1{
+    font-size: 100px;
+}
