@@ -10,7 +10,7 @@ const Recommended = ({anime}) => {
                 <div className='hero-item-info'>
                     <p>{anime.title}</p>
                 </div>
-                <img className='heroitem' src={anime.images.jpg.large_image_url} alt="Carousel Items"/>
+                <img className='heroitem' src={anime[0].images.jpg.large_image_url} alt="Carousel Items"/>
                 
             </div>
         </div>
