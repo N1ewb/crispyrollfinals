@@ -19,15 +19,15 @@ const Hero = () => {
                 setRecommended(JSON.parse(cachedData));
                 console.log('Cached data:', JSON.parse(cachedData));
             } else {
-                const recommendedData = [];
+                let data
                 for (const title of titles) {
                     const response = await axios.get(`${API_URL}q=${title}&limit=1`);
-                    recommendedData.push(response.data.data);
+                    const data = (response.data.data);
                 }
 
-                setRecommended(recommendedData);
-                console.log(recommendedData);
-                localStorage.setItem(CACHE_KEY, JSON.stringify(recommendedData));
+                setRecommended(data);
+                console.log(data);
+                localStorage.setItem(CACHE_KEY, JSON.stringify(recommended));
             }
         } catch (error) {
             console.error('Error fetching data:', error);
