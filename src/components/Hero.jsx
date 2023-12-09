@@ -22,7 +22,7 @@ const Hero = () => {
                 let data
                 for (const title of titles) {
                     const response = await axios.get(`${API_URL}q=${title}&limit=1`);
-                    const data = (response.data.data);
+                    data = (response.data.data);
                 }
 
                 setRecommended(data);
